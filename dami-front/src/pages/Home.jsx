@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/index.css"; // page-specific styles
 import { Sparkles, ShieldCheck, Calendar, Users } from "lucide-react";
 import FAQSection from "../components/FAQSection";
@@ -25,9 +26,9 @@ const Home = () => {
             Your trusted cleaning service for homes and offices — fast, reliable, and spotless results every time.
           </p>
           <div className="cta-row">
-            <a href="/contact" className="btn btn-primary">Book a Cleaning</a>
-            <a href="/services" className="btn-primary">View Services</a>
-          </div>
+        <Link to="/quote" className="btn btn-primary">Book a Cleaning</Link>
+        <Link to="/services" className="btn-primary">View Services</Link>
+      </div>
         </div>
       </section>
 
@@ -45,7 +46,7 @@ const Home = () => {
       </p>
 
       <p className="muted-dark">
-        We ensure your <strong>privacy and safety</strong>. We respect your home and your information. Our team follows safety-first practices and thoughtful cleaning protocols to ensure your space is cared for with precision, covering dusting and vacuuming, scrubbing floors, and sanitizing high-touch surfaces. Every home is different, so we offer <strong>custom plans</strong> and helpful add-ons like bed linen changes, dishwasher loading/unloading, and laundry folding. Prefer eco-conscious options? We can accommodate upon request. Count on dependable quality, <strong>flexible scheduling</strong>, and <strong>upfront pricing.</strong> If you’re ready for a partner that treats your home like their own, we're one quote away.
+        We ensure your <strong>privacy and safety</strong>. We respect your home and your information. Our team follows safety-first practices and thoughtful cleaning protocols to ensure your space is cared for with precision, covering dusting and vacuuming, scrubbing floors, and sanitizing high-touch surfaces. Every home is different, so we offer <strong>custom plans</strong> and helpful add-ons like bed linen changes, dishwasher loading/unloading, and laundry folding. Prefer eco-conscious options? We can accommodate upon request. Count on dependable quality, <strong>flexible scheduling</strong>, and <strong>upfront pricing.</strong> If you’re ready for a partner that treats your home like their own, we are one quote away.
       </p>
 
       {/* NEW: 4-feature list */}
@@ -84,7 +85,7 @@ const Home = () => {
 </ul>
       {/* Centered CTA */}
       <div className="cta-row">
-        <a href="/quote" className="btn btn-primary">Learn More About Us</a>
+        <Link to="/about" className="btn btn-primary">Learn More About Us</Link>
       </div>
     </div>
   </div>
